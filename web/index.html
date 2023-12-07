@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Vehicle Algorithm for Pedestrian Collision Avoidance Function Group #1</title>
+    <link rel="stylesheet" href="styles.css">
+    <h2>PCAS 1 Website</h2>
+</head>
+<body>
+    <section id="background">
+        <h2>PCAS Background</h2>
+        <p>Autonomous or Highly Automated driving is an area of intense interest by the public and the auto industry. It is obvious that a self-driving car must be able to stay in its lane, brake at intersections, and remain under control during maneuvers, in other words, exhibit basic driving skills. But another fundamental aspect of the driving function is avoiding collisions (in this case with pedestrians) in emergency situations.</p>
+        <p>Human drivers do this by:</p>
+        <ol>
+            <li>Recognizing & responding to potential hazardous situations (identifying a risk and adjusting driving situation to reduce it)</li>
+            <li>Recognizing & responding to immediate hazards (identifying an imminent collision and executing strong avoidance maneuver)</li>
+        </ol>
+    </section>
+
+    <section id="description">
+        <h2>Project Description</h2>
+        <p>This project involves the development of an automated vehicle algorithm for pedestrian collision avoidance. The system is designed to automatically detect pedestrians and take appropriate actions to avoid collisions without human driver intervention.</p>
+    </section>
+
+    <style>
+	/* Set the background color for the entire page */
+body {
+    background-color: #f0f0f0; /* Light gray background color */
+    font-family: Arial, sans-serif; /* Choose a commonly used font */
+}
+
+/* Style the header with a dark green background and white text */
+header {
+    background-color: #006400; /* Dark green background color */
+    color: #ffffff; /* White text color */
+    padding: 20px; /* Add some padding to the header */
+}
+
+/* Style the navigation links */
+nav ul {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add spacing between list items */
+}
+
+nav a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #ffffff; /* White text color for links */
+}
+
+/* Style the sections with background color and padding */
+section {
+    background-color: #ffffff; /* White background color for sections */
+    padding: 20px; /* Add padding to sections */
+    margin: 20px; /* Add margin around sections for separation */
+    border: 1px solid #006400; /* Add a green border around sections */
+}
+
+/* Style the headings within sections */
+section h2 {
+    color: #006400; /* Dark green text color for section headings */
+}
+
+/* Style the team member images */
+.team-member img {
+    width: 200px; /* Set the desired width for all team member images */
+    height: 200px; /* Set the desired height for all team member images */
+    object-fit: cover; /* Ensure the image aspect ratio is maintained and covers the specified dimensions */
+}
+
+section a {
+    color: #006400; /* Dark green color for links within sections */
+}
+
+section ol {
+    padding-left: 20px; /* Add left padding to ordered lists */
+}
+
+section ol li {
+    margin-bottom: 10px; /* Add spacing between list items */
+}
+
+.team-member {
+    border: 2px solid #006400; /* Add a green border around team member divs */
+    padding: 10px; /* Add some padding to team member divs */
+    margin: 10px; /* Add margin around team member divs for separation */
+}
+
+.team-member img {
+    box-shadow: 0px 0px 5px #888888; /* Add a shadow to team member images */
+}
+
+    </style>
+    
+    <section id="team">
+        <h2>PCAS1 Group Members</h2>
+        <div class="team-member">
+            <img src="Ally_leaves.JPG" alt="team member">
+            <h3>Ally Bannon</h3>
+            <p>Role: Project Manager</p>
+            <p><a href="https://www.linkedin.com/in/alexandra-bannon-msu/">Learn More about Ally!</a></p>
+        </div>
+    
+        <!-- Repeat this structure for other team members -->
+        <div class="team-member">
+            <img src="IMG_8007.jpg" alt="team member">
+            <h3>Elaina Frydel</h3>
+            <p>Role: Project Facilitator</p>
+            <p><a href="https://www.linkedin.com/in/elaina-frydel-693140247/">Learn More about Elaina!</a></p>
+        </div>
+        <div class="team-member">
+            <img src="CD9A7D5B-2069-4D8D-A2FF-A2F884284399.jpeg" alt="team member">
+            <h3>Drew Peterson</h3>
+            <p>Role: Security/Assurance Manager</p>
+            <p><a href="www.linkedin.com/in/drew-peterson-09a195278">Learn More about Drew!</a></p>
+        </div>
+    
+        <div class="team-member">
+            <img src="IMG_2152.jpeg" alt="team member">
+            <h3>Andrew Naumoff</h3>
+            <p>Role: Artifacts Manager</p>
+            <p><a href="www.linkedin.com/in/andrew-naumoff-b0a1a2270">Learn More about Andrew!</a></p>
+        </div>
+        <div class="team-member">
+            <img src="mytiephoto.jpg" alt="team member">
+            <h3>Will Gamba</h3>
+            <p>Role: Domain Expert/ Customer Liaison</p>
+            <p><a href="https://www.linkedin.com/in/will-gamba-41842927a">Learn More about Will!</a></p>
+        </div>
+    </section>
+
+	<script>
+        function downloadZipFile() {
+          // Create a link element
+            var link = document.createElement('a');
+
+            // Set the href attribute to the path of the ZIP file
+            link.href = 'CSE435_PCAS1_Project-main.zip'; // Replace with the actual path or URL
+
+            // Set the download attribute with the desired filename
+            link.download = 'CSE435_PCAS1_Project-main.zip';
+
+            // Append the link to the document
+            document.body.appendChild(link);
+
+            // Trigger a click event on the link to initiate the download
+            link.click();
+
+            // Remove the link from the document
+            document.body.removeChild(link);
+        }
+	</script>
+
+	<script>
+	function downloadExecutable() {
+          // Create a link element
+            var link = document.createElement('a');
+
+            // Set the href attribute to the path of the ZIP file
+            link.href = 'output.zip'; // Replace with the actual path or URL
+
+            // Set the download attribute with the desired filename
+            link.download = 'output.zip';
+
+            document.body.appendChild(link);
+
+            // Trigger a click event on the link to initiate the download
+            link.click();
+
+            // Remove the link from the document
+            document.body.removeChild(link);
+        }
+       </script>
+	
+
+	
+       <section id="local-info">
+        <h2>Domain Research</h2>
+       	<li><a href="applsci-12-08458-v2.pdf">Autonomous Vehicle with Emergency Braking Algorithm Based
+on Multi-Sensor Fusion and Super Twisting Speed Controller PDF</a></li>
+        </ul>
+    </section>
+
+    <section id="resources">
+        <h2>Resources</h2>
+        <ul>
+	    <li><a href="2023-PCAS-Dataspeed-Capaldi.pdf">PCAS Project Description (PDF)</a></li>
+	    <li><a href="CSE435_PCAS_SRSv1.pdf"i>SRS (Software Requ	irements Spec)</a></li>
+	   <li><a href="prototype.html">Prototype v2 executable </a></li>
+	   <li><a href="435 SRS Presentation.pptx">435 SRS Presentation PowerPoint</a></li>
+	   <li><a href="435 SRS Presentation-1.pdf">435 SRS Presentation PDF</a></li>
+	   <li><a href=" staticthenmovingvids.html"> Static them Moving Scenarios</a></li>
+            <li><a href="#" onclick="downloadZipFile()">Prototype v1 </a></li>
+	    <li><a href=" protected/groupinfo.html">Group Information (for team and
+instructors)</a></li>
+            <li><a href="biblio.html">Bibliography of Resources for research</a></li>
+        </ul>
+    </section>
+
+    <section id="Prototype videos">
+        <h2>Prototype videos</h2>
+        <ul>
+     	<li><a href=" staticthenmovingvids.html"> Static them Moving Scenarios</a></li>
+	<li><a href=" movingthenstopped.html"> Moving then stopped Scenarios</a></li>
+	<li><a href=" static.html"> Static Scenarios</a></li>
+      </ul>
+    </section>
+
+    <section id="local-info">
+        <h2>Local Information</h2>
+        <!-- Include information only for team members, instructor, and TA -->
+        <p>For more information about CSE 435, you can visit the <a href="https://www.cse.msu.edu/~cse435/">CSE 435 Course Site</a>.</p>
+        <p>For details about the instructor, please refer to <a href="https://www.cse.msu.edu/~chengb/">Dr. Betty H.C. Cheng's Site</a>.</p>
+        <p>Teaching Assistants:</p>
+        <ul>
+            <li>Kira Chan (<a href="mailto:chanken1@msu.edu">chanken1 at msu dot edu</a>)</li>
+            <li>Nick Polanco (<a href="mailto:polanco3@msu.edu">polanco3 at msu dot edu</a>)</li>
+        </ul>
+    </section>
+
+    <footer>
+	<div style="text-align: center;">
+       	  <p>&copy; 2023 CSE 435 PCAS Group 1</p>
+	</div>
+    </footer>
+</body>
+</html>
